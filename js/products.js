@@ -3,7 +3,7 @@ const stockProductos = [
     id: 1,
     nombre: "30GB",
     cantidad: 1,
-    desc: "Minutos ilimitados",
+    desc: "Unlimited minutes.",
     precio: 35000,
     img: "img/telefono.png",
   },
@@ -11,7 +11,7 @@ const stockProductos = [
     id: 2,
     nombre: "15GB",
     cantidad: 1,
-    desc: "Minutos ilimitados",
+    desc: "Unlimited minutes.",
     precio: 24900,
     img: "img/telefono.png",
   },
@@ -19,7 +19,7 @@ const stockProductos = [
     id: 3,
     nombre: "10GB",
     cantidad: 1,
-    desc: "Minutos ilimitados",
+    desc: "Unlimited minutes.",
     precio: 19900,
     img: "img/telefono.png",
   },
@@ -27,39 +27,39 @@ const stockProductos = [
     id: 4,
     nombre: "3.5GB",
     cantidad: 1,
-    desc: "Minutos ilimitados",
+    desc: "Unlimited minutes.",
     precio: 9900,
     img: "img/telefono.png",
   },
   {
     id: 5,
-    nombre: "4GB de navegación",
+    nombre: "4GB of navigation",
     cantidad: 1,
-    desc: "Telefonía, Internet y televisión",
+    desc: "Telephony, internet and television.",
     precio: 79900,
     img: "img/planes.png",
   },
   {
     id: 6,
-    nombre: "10GB de navegación",
+    nombre: "10GB of navigation",
     cantidad: 1,
-    desc: "Telefonía, Internet y televisión",
+    desc: "Telephony, internet and television.",
     precio: 99900,
     img: "img/planes.png",
   },
   {
     id: 7,
-    nombre: "20GB de navegación",
+    nombre: "20GB of navigation",
     cantidad: 1,
-    desc: "Telefonía, Internet y televisión. Incluye repetidores",
+    desc: "Telephony, internet and television. Includes repeaters.",
     precio: 140900,
     img: "img/planes.png",
   },
   {
     id: 8,
-    nombre: "30GB de navegación",
+    nombre: "30GB of navigation",
     cantidad: 1,
-    desc: "Telefonía, Internet de fibra óptica y televisión satelital. Incluye repetidores",
+    desc: "Telephony, fiber optic Internet and satellite television. Includes repeaters.",
     precio: 200900,
     img: "img/planes.png",
   },
@@ -125,7 +125,7 @@ stockProductos.forEach((prod) => {
         <p class="card-text">${desc}</p>        
         <p class="card-text">$ ${precio}</p>
         
-        <button class="btn btn-primary" onclick="agregarProducto(${id})">Comprar Producto</button>
+        <button class="btn btn-primary" onclick="agregarProducto(${id})">BUY PRODUCT</button>
       </div>
     </div>
       `;
