@@ -107,7 +107,7 @@ if (procesarCompra) {
         confirmButtonText: "Aceptar",
       });
     } else {
-      location.href = "compra.html";
+      location.href = "buy.html";
     }
   });
 }
