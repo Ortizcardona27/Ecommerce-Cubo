@@ -9,10 +9,10 @@ export function procesarPedido() {
               <img class="img-fluid img-carrito" src="${img}"/>
               </div>
               <div>
-              <p>Producto: ${nombre}</p>
-            <p>Precio: ${precio}</p>
-            <p>Cantidad :${cantidad}</p>
-            <button class="btn btn-danger"  onclick="eliminarProducto(${id})">Eliminar producto</button>
+              <p>Product: ${nombre}</p>
+            <p>Price: ${precio}</p>
+            <p>Amount :${cantidad}</p>
+            <button class="btn btn-danger"  onclick="eliminarProducto(${id})">Delete Product</button>
               </div>
             </div>
             

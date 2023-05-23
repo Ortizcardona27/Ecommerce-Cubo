@@ -101,10 +101,10 @@ if (procesarCompra) {
   procesarCompra.addEventListener("click", () => {
     if (carrito.length === 0) {
       Swal.fire({
-        title: "¡Tu carrito está vacio!",
-        text: "Compra algo para continuar con la compra",
+        title: "¡Your cart is empty!",
+        text: "Buy something to continue shopping.",
         icon: "error",
-        confirmButtonText: "Aceptar",
+        confirmButtonText: "Acept",
       });
     } else {
       location.href = "buy.html";
@@ -125,7 +125,7 @@ stockProductos.forEach((prod) => {
         <p class="card-text">${desc}</p>        
         <p class="card-text">$ ${precio}</p>
         
-        <button class="btn btn-primary" onclick="agregarProducto(${id})">BUY PRODUCT</button>
+        <button class="btn btn-primary" onclick="agregarProducto(${id})">Buy Product</button>
       </div>
     </div>
       `;
@@ -164,10 +164,10 @@ const mostrarCarrito = () => {
           <img class="img-fluid img-carrito" src="${img}"/>
           </div>
           <div>
-          <p>Producto: ${nombre}</p>
-        <p>Precio: ${precio}</p>
-        <p>Cantidad :${cantidad}</p>
-        <button class="btn btn-danger"  onclick="eliminarProducto(${id})">Eliminar producto</button>
+          <p>Product: ${nombre}</p>
+        <p>Price: ${precio}</p>
+        <p>Amount :${cantidad}</p>
+        <button class="btn btn-danger"  onclick="eliminarProducto(${id})">Delete Product</button>
           </div>
         </div>
         
@@ -177,12 +177,12 @@ const mostrarCarrito = () => {
   }
 
   if (carrito.length === 0) {
-    console.log("Nada");
+    console.log("Nothing");
     modalBody.innerHTML = `
-      <p class="text-center text-primary parrafo">¡Aun no agregaste nada!</p>
+      <p class="text-center text-primary parrafo">¡you haven't added anything yet!</p>
       `;
   } else {
-    console.log("Algo");
+    console.log("Something");
   }
   carritoContenedor.textContent = carrito.length;
 
@@ -236,10 +236,10 @@ function enviarCompra(e) {
 
   if (email === '' || cliente == '') {
     Swal.fire({
-      title: "¡Debes completar tu email y nombre!",
-      text: "Rellena el formulario",
+      title: "¡You must fill in your name and email!",
+      text: "Fill the form.",
       icon: "error",
-      confirmButtonText: "Aceptar",
+      confirmButtonText: "Acept",
     })
   } else {
 
@@ -256,10 +256,10 @@ function enviarCompra(e) {
 
     emailjs.sendForm(serviceID, templateID, this)
       .then(() => {
-        btn.value = 'Finalizar compra';
-        alert('Correo enviado!');
+        btn.value = 'Finalize Purchase';
+        alert('Email sent.');
       }, (err) => {
-        btn.value = 'Finalizar compra';
+        btn.value = 'Finalize Purchase';
         alert(JSON.stringify(err));
       });
 
@@ -274,7 +274,7 @@ function enviarCompra(e) {
 
       const alertExito = document.createElement('p')
       alertExito.classList.add('alert', 'alerta', 'd-block', 'text-center', 'col-12', 'mt-2', 'alert-success')
-      alertExito.textContent = 'Compra realizada correctamente'
+      alertExito.textContent = 'Purchase made correctly'
       formulario.appendChild(alertExito)
 
       setTimeout(() => {
