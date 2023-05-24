@@ -1,5 +1,5 @@
 const stockProductos = [
-  {
+{
     id: 1,
     nombre: "Telephony 100 Minutes",
     cantidad: 1,
@@ -30,90 +30,10 @@ const stockProductos = [
     desc: "All social networks + Unlimited minutes.",
     precio: 29900,
     img: "img/telefono.png",
-  },
-  
-  {
-    id: 5,
-    nombre: "Television HD",
-    cantidad: 1,
-    desc: "Television HD, Include repeaters.",
-    precio: 20900,
-    img: "img/tv.png",
-  },
-  {
-    id: 6,
-    nombre: "HD + Win Sports+",
-    cantidad: 1,
-    desc: "Television HD + Win Sports+. Include repeaters",
-    precio: 23900,
-    img: "img/tv.png",
-  },
-  {
-    id: 7,
-    nombre: "HD + Netflix + HBO+",
-    cantidad: 1,
-    desc: "Television HD + Netflix + HBO+. Includes repeaters.",
-    precio: 29900,
-    img: "img/tv.png",
-  },
-  {
-    id: 8,
-    nombre: "Internet 10MG",
-    cantidad: 1,
-    desc: "Internet 10MG. Includes modem.",
-    precio: 37900,
-    img: "img/internet.png",
-  },
-  {
-    id: 9,
-    nombre: "Internet 20MG",
-    cantidad: 1,
-    desc: "Internet 20MG. Includes modem.",
-    precio: 45100,
-    img: "img/internet.png",
-  },
-  {
-    id: 10,
-    nombre: "Internet 100MG",
-    cantidad: 1,
-    desc: "Internet 100MG. Includes modem.",
-    precio: 54900,
-    img: "img/internet.png",
-  },
-  {
-    id: 11,
-    nombre: "4GB of navigation",
-    cantidad: 1,
-    desc: "Telephony, internet and television.",
-    precio: 79900,
-    img: "img/planes.png",
-  },
-  {
-    id: 12,
-    nombre: "10GB Of Navigation",
-    cantidad: 1,
-    desc: "Telephony, internet and television.",
-    precio: 99900,
-    img: "img/planes.png",
-  },
-  {
-    id: 13,
-    nombre: "20GB Of Navigation",
-    cantidad: 1,
-    desc: "Telephony, internet and television. Includes repeaters.",
-    precio: 140900,
-    img: "img/planes.png",
-  },
-  {
-    id: 14,
-    nombre: "30GB Of Navigation",
-    cantidad: 1,
-    desc: "Telephony, fiber optic Internet and satellite television. Includes repeaters.",
-    precio: 200900,
-    img: "img/planes.png",
-  },
-];
-let carrito = [];
+  }
+  ];
+
+  let carrito = [];
 
 const contenedor = document.querySelector("#contenedor");
 const carritoContenedor = document.querySelector("#carritoContenedor");
