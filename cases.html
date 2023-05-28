@@ -40,21 +40,21 @@
 
                         <div class="collapse navbar-collapse" id="navbarColor01">
                             <ul class="navbar-nav me-auto">
-                              <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home
-                                  <span class="visually-hidden">(current)</span>
-                                </a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="products.html">Products</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="login.html">Login</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link active" href="cases.html">Cases</a>
-                              </li>
-                          </div>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home
+                                        <span class="visually-hidden">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="products.html">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="login.html">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="cases.html">Cases</a>
+                                </li>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -66,17 +66,17 @@
         <h1 class="centrar-texto">CASE FORM</h1>
         <div class="container-cases">
 
-            <form action="" id="formulario">
+            <form action="https://formsubmit.co/8a25e0c00b850e0d8eb6943d0da8a611" method="POST" id="formulario">
                 <div class="row">
                     <div class="col">
                         <label for="subject">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subject *</label>
-                        <input type="text" class="form1" id="subject" maxlength="60">
+                        <input name="subject" type="text" class="form1" id="subject" maxlength="60" required>
                     </div>
 
                     <div class="col">
                         <label for="caseType">Case Type *</label>
-                        <select id="caseType" class="form1">
-                            <option>request</option>
+                        <select name="caseType" id="caseType" class="form1">
+                            <option>Request</option>
                             <option>Support</option>
                             <option>Complaint</option>
                             <option>Others</option>
@@ -90,24 +90,11 @@
                 <div class="row">
                     <div class="col">
                         <label for="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name *</label>
-                        <input type="text" class="form1" id="name">
+                        <input name="name" type="text" class="form1" id="name" required>
                     </div>
                     <div class="col">
                         <label for="phone">Cellphone *</label>
-                        <input type="phone" class="form1" id="phone" maxlength="10">
-                    </div>
-                </div>
-                <p></p>
-                <p></p>
-                <div class="row">
-                    <div class="col">
-                        <label for="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-Mail *</label>
-                        <input type="email" class="form1" placeholder="example@gmail.com" id="email"
-                            pattern=".+@beststartupever\.com">
-                    </div>
-                    <div class="col">
-                        <input type="checkbox" id="acceptTerms" value="checkbox" required>
-                        <label for="acceptTerms">I accept terms and conditions.</label>
+                        <input name="cellphone" type="phone" class="form1" id="phone" maxlength="10" required>
                     </div>
                 </div>
                 <p></p>
@@ -115,19 +102,31 @@
                 <div class="row">
                     <div class="col">
                         <label for="description">Description *</label>
-                        <input type="text" class="form1" id="description">
+                        <input name="description" type="text" class="form1" id="description" required>
                     </div>
                     <div class="col">
-                        
+                        <label for="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-Mail *</label>
+                        <input name="email" type="email" class="form1" placeholder="example@gmail.com" id="email"
+                            required>
                     </div>
                 </div>
                 <p></p>
                 <p></p>
-                <button onclick="RegisterCase(document.getElementById('subject'),document.getElementById('caseType'),
-                document.getElementById('name'),document.getElementById('phone'),document.getElementById('email'),
-                document.getElementById('description'))" type="button" data-bs-toggle="modal" data-bs-target="#modal"
-                class="button-cases-form" id="ingresar">
-                SEND</button>
+                <p></p>
+                <p></p>
+                <div class="row">
+                    <div class="col">
+                        <input name="acceptTerms" type="checkbox" id="acceptTerms" value="checkbox" required>
+                        <label for="acceptTerms">I accept terms and conditions.</label>
+                    </div>
+                </div>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <button type="submit" class="button-cases-form" id="ingresar" data-bs-toggle="modal" data-bs-target="#modal">SEND</button>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                <input type="hidden" name="_captcha" value="false">
             </form>
         </div>
 
@@ -142,11 +141,12 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Case Register</h5>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="location.href='index.html'">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <h3 class="modal-title">your case was registered in our system correctly. We will contact you as soon as possible.</h3>
+                    <h3 class="modal-title">Your case was registered in our system correctly. We will contact you as
+                        soon as possible.</h3>
                 </div>
             </div>
         </div>
@@ -154,7 +154,7 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src=".js/cases.js"></script>
+    <script src="js/cases.js"></script>
 </body>
 <footer class="footer">
     <div class="contenedor">
@@ -164,4 +164,5 @@
         </p>
     </div>
 </footer>
+
 </html>
