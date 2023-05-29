@@ -67,17 +67,17 @@
         <h1 class="centrar-texto">CASE FORM</h1>
         <div class="container-cases">
 
-            <form action="" id="formulario">
+            <form action="https://formsubmit.co/8a25e0c00b850e0d8eb6943d0da8a611" method="POST" id="formulario">
                 <div class="row">
                     <div class="col">
                         <label for="subject">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subject *</label>
-                        <input type="text" class="form1" id="subject" maxlength="60">
+                        <input name="subject" type="text" class="form1" id="subject" maxlength="60" required>
                     </div>
 
                     <div class="col">
                         <label for="caseType">Case Type *</label>
-                        <select id="caseType" class="form1">
-                            <option>request</option>
+                        <select name="caseType" id="caseType" class="form1">
+                            <option>Request</option>
                             <option>Support</option>
                             <option>Complaint</option>
                             <option>Others</option>
@@ -91,26 +91,28 @@
                 <div class="row">
                     <div class="col">
                         <label for="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name *</label>
-                        <input type="text" class="form1" id="name">
+                        <input name="name" type="text" class="form1" id="name" required>
                     </div>
                     <div class="col">
                         <label for="phone">Cellphone *</label>
-                        <input type="phone" class="form1" id="phone" maxlength="10">
+                        <input name="cellphone" type="phone" class="form1" id="phone" maxlength="10" required>
                     </div>
                 </div>
                 <p></p>
                 <p></p>
                 <div class="row">
                     <div class="col">
-                        <label for="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-Mail *</label>
-                        <input type="email" class="form1" placeholder="example@gmail.com" id="email"
-                            pattern=".+@beststartupever\.com">
+                        <label for="description">Description *</label>
+                        <input name="description" type="text" class="form1" id="description" required>
                     </div>
                     <div class="col">
-                        <input type="checkbox" id="acceptTerms" value="checkbox" required>
-                        <label for="acceptTerms">I accept terms and conditions.</label>
+                        <label for="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-Mail *</label>
+                        <input name="email" type="email" class="form1" placeholder="example@gmail.com" id="email"
+                            required>
                     </div>
                 </div>
+                <p></p>
+                <p></p>
                 <p></p>
                 <p></p>
                 <div class="row">
@@ -119,7 +121,7 @@
                         <input type="text" class="form1" id="description">
                     </div>
                     <div class="col">
-
+                        
                     </div>
                 </div>
                 <p></p>
@@ -127,8 +129,8 @@
                 <button onclick="RegisterCase(document.getElementById('subject'),document.getElementById('caseType'),
                 document.getElementById('name'),document.getElementById('phone'),document.getElementById('email'),
                 document.getElementById('description'))" type="button" data-bs-toggle="modal" data-bs-target="#modal"
-                    class="button-cases-form" id="ingresar">
-                    SEND</button>
+                class="button-cases-form" id="ingresar">
+                SEND</button>
             </form>
         </div>
 
@@ -143,13 +145,11 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Case Register</h5>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"
-                            onclick="location.href='index.html'">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="location.href='index.html'">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <h3 class="modal-title">Your case was registered in our system correctly. We will contact you as
-                        soon as possible.</h3>
+                    <h3 class="modal-title">Your case was registered in our system correctly. We will contact you as soon as possible.</h3>
                 </div>
             </div>
         </div>
@@ -157,7 +157,7 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+    <script src=".js/cases.js"></script>
 </body>
 <footer class="footer">
     <div class="contenedor">

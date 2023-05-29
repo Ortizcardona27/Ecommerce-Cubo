@@ -6,7 +6,7 @@
     --animate-delay: 1s;
 }
 
-*{
+* {
     font-family: 'Lato' sans-serif;
 }
 
@@ -22,19 +22,18 @@ p {
 }
 
 .h1 {
-    color: #243853
-    var(--fuenteParrafos)
-    
+    color: #243853 var(--fuenteParrafos)
 }
 
 h4 {
     color: black;
 }
 
-h6{
+h6 {
     color: black;
     float: left;
 }
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -99,7 +98,7 @@ body {
     text-align: center;
     display: block;
     background: white;
-    height: 730px;
+    height: 600px;
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 1rem;
@@ -118,40 +117,42 @@ body {
 }
 
 .columna {
-    width:33%;
-    float:left;
-  }
+    width: 33%;
+    float: left;
+}
 
-  .columna-casos {
-    width:33%;
-    float:left;
+.columna-casos {
+    width: 50%;
+    float: left;
     padding: 70px;
-  }
-  
-  @media (max-width: 500px) {
-    
-    .columna {
-      width:auto;
-      float:none;
-    }
-    
-  }
+}
 
-  .columna1 {
-    width:50%;
-    float:left;
+.container-buy {}
+
+@media (max-width: 500px) {
+
+    .columna {
+        width: auto;
+        float: none;
+    }
+
+}
+
+.columna1 {
+    width: 50%;
+    float: left;
     height: 730px;
     padding: 140px;
-  }
-  
-  @media (max-width: 500px) {
-    
+}
+
+@media (max-width: 500px) {
+
     .columna1 {
-      width:auto;
-      float:none;
+        width: auto;
+        float: none;
     }
-    
-  }
+
+}
 
 .contenedor2 {
     display: grid;
@@ -187,7 +188,7 @@ a {
     text-decoration: none;
     text-align: center;
     display: block;
-    
+
 }
 
 .section {
@@ -216,7 +217,7 @@ a {
 
 }
 
-.footer-text-index{
+.footer-text-index {
     background-color: #243853;
     color: white;
     text-align: center;
@@ -224,19 +225,56 @@ a {
     font-family: 'Lato' sans-serif;
 
 }
+
 .strong1 {
     color: #FFD700;
 }
 
+.input-info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
 .container {
     display: grid;
-
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
         "article1 article2 article3";
+}
+
+.container-buy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "article4 article5";
+}
+
+.left {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.right {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .container2 {
@@ -283,7 +321,7 @@ a {
     width: 50%;
     float: left;
     margin-top: 12%;
- 
+
 }
 
 .container-cases {
@@ -294,14 +332,14 @@ a {
 
 .centrar-texto {
     text-align: center;
-    width:50%;
-    padding: 120px;
+    width: 50%;
+    padding: 60px;
     margin-bottom: -14%;
 }
 
 .centrar-texto1 {
     text-align: center;
-    width:100%;
+    width: 100%;
 }
 
 .centrar-texto-List-Cases {
@@ -309,7 +347,7 @@ a {
     padding: 35px;
 }
 
-.nota{
+.nota {
     text-align: left;
 }
 
@@ -349,7 +387,23 @@ a {
     grid-area: article3;
 }
 
+.article4 {
+    background-color: #fff;
+    height: 590px;
+    margin-top: 5rem;
+    margin-right: 1rem;
+    border-radius: 20px;
+    grid-area: article4;
+}
 
+.article5 {
+    background-color: #fff;
+    height: 590px;
+    margin-top: 5rem;
+    margin-right: 1rem;
+    border-radius: 20px;
+    grid-area: article5;
+}
 
 .article-text {
     font-size: 1.4rem;
@@ -449,7 +503,7 @@ textarea {
 label {
     display: block;
     float: inline-end;
-    font: 1.3em 'Lato' sans-serif ;
+    font: 1.3em 'Lato' sans-serif;
 }
 
 #button-cases {
@@ -470,7 +524,7 @@ label {
 }
 
 
-#button-login{
+#button-login {
     font-family: 'Lato' sans-serif;
     height: 45px;
     padding-left: 1px;
@@ -520,21 +574,21 @@ label {
     cursor: pointer;
 }
 
-.v-line{
+.v-line {
     border-left: thick solid #c7c7c7;
-    height:72%;
+    height: 72%;
     left: 50%;
     position: absolute;
-   }
+}
 
-   .v-line1{
+.v-line1 {
     border-left: thick solid #c7c7c7;
-    height:74%;
+    height: 74%;
     left: 53%;
     position: absolute;
-   }
+}
 
-   #usuario{
+#usuario {
     height: 45px;
     padding-left: 5px;
     padding-right: 5px;
@@ -546,9 +600,9 @@ label {
     border-style: solid;
     border-radius: 10px;
     width: 420px;
-  }
+}
 
-  #contrasena{
+#contrasena {
     height: 45px;
     padding-left: 5px;
     padding-right: 5px;
@@ -560,13 +614,11 @@ label {
     border-style: solid;
     border-radius: 10px;
     width: 420px;
-  }
+}
 
-  .form1{
+.form1 {
     width: 300px;
     font-size: 15px;
     padding: 8px;
     float: inline-start;
-  }
-
- 
+}

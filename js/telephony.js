@@ -70,7 +70,7 @@ if (procesarCompra) {
   procesarCompra.addEventListener("click", () => {
     if (carrito.length === 0) {
       Swal.fire({
-        title: "¡Your cart is empty!",
+        title: "Your cart is empty!",
         text: "Buy something to continue shopping.",
         icon: "error",
         confirmButtonText: "Acept",
@@ -85,11 +85,11 @@ stockProductos.forEach((prod) => {
   const { id, nombre, precio, desc, img, cantidad } = prod;
   if (contenedor) {
     contenedor.innerHTML += `
-    <div class="card mt-3" style="width: 18rem; text-align: center">
+    <div class="card mt-3" style="width: 18rem; text-align: center; margin-left: 50px;">
       <div class="card-body">
         <h5 class="card-title">${nombre}</h5>
         <br>
-        <img class="card-img-top mt-2" src="${img}" alt="Card image cap">
+        <img style="width: 100px" class="mt-2" src="${img}" alt="Card image cap">
         <br><br>
         <p class="card-text">${desc}</p>        
         <p class="card-text">$ ${precio}</p>
@@ -128,27 +128,23 @@ const mostrarCarrito = () => {
       const { id, nombre, precio, desc, img, cantidad } = prod;
       console.log(modalBody);
       modalBody.innerHTML += `
-        <div class="modal-contenedor">
-          <div>
-          <img class="img-fluid img-carrito" src="${img}"/>
+        <div style="border-bottom: var(--bs-modal-header-border-width) solid var(--bs-modal-header-border-color);" class="modal-contenedor">
+          <div class="input-info">
+            <img style="width: 100px" src="${img}"/>
+            <p style="padding-right: 70px">${nombre}</p>
           </div>
-          <div>
-          <p>Product: ${nombre}</p>
-        <p>Price: ${precio}</p>
-        <p>Amount :${cantidad}</p>
-        <button class="btn btn-danger"  onclick="eliminarProducto(${id})">Delete Product</button>
+          <div class="input-info">
+            <p style="padding-left: 70px">Price: ${precio}</p>
+            <button class="btn btn-danger" onclick="eliminarProducto(${id})">Delete Product</button>
           </div>
-        </div>
-        
-    
-        `;
+        </div>`;
     });
   }
 
   if (carrito.length === 0) {
     console.log("Nothing");
     modalBody.innerHTML = `
-      <p class="text-center text-primary parrafo">¡you haven't added anything yet!</p>
+      <p class="text-center text-primary parrafo">You haven't added anything yet!</p>
       `;
   } else {
     console.log("Something");
@@ -205,7 +201,7 @@ function enviarCompra(e) {
 
   if (email === '' || cliente == '') {
     Swal.fire({
-      title: "¡You must fill in your name and email!",
+      title: "You must fill in your name and email!",
       text: "Fill the form.",
       icon: "error",
       confirmButtonText: "Acept",
@@ -226,7 +222,10 @@ function enviarCompra(e) {
     emailjs.sendForm(serviceID, templateID, this)
       .then(() => {
         btn.value = 'Finalize Purchase';
-        alert('Email sent.');
+        alert('Your transaction is being validated');
+        setTimeout(() => {
+          window.location.href = "http://127.0.0.1:5500/products.html";
+        }, 3000)
       }, (err) => {
         btn.value = 'Finalize Purchase';
         alert(JSON.stringify(err));
