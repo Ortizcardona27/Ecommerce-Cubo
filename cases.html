@@ -113,20 +113,17 @@
                 <p></p>
                 <div class="row">
                     <div class="col">
-                        <label for="description">Description *</label>
-                        <input type="text" class="form1" id="description">
-                    </div>
-                    <div class="col">
-
+                        <input name="acceptTerms" type="checkbox" id="acceptTerms" value="checkbox" required>
+                        <label for="acceptTerms">I accept terms and conditions.</label>
                     </div>
                 </div>
                 <p></p>
                 <p></p>
-                <button onclick="RegisterCase(document.getElementById('subject'),document.getElementById('caseType'),
-                document.getElementById('name'),document.getElementById('phone'),document.getElementById('email'),
-                document.getElementById('description'))" type="button" data-bs-toggle="modal" data-bs-target="#modal"
-                    class="button-cases-form" id="ingresar">
-                    SEND</button>
+                <p></p>
+                <p></p>
+                <button type="submit" class="button-cases-form" id="ingresar" data-bs-toggle="modal" data-bs-target="#modal">SEND</button>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                <input type="hidden" name="_captcha" value="false">
             </form>
         </div>
 
@@ -141,13 +138,11 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Case Register</h5>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"
-                            onclick="location.href='index.html'">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <h3 class="modal-title">your case was registered in our system correctly. We will contact you as
-                        soon as possible.</h3>
+                    <h3 class="modal-title">your case was registered in our system correctly. We will contact you as soon as possible.</h3>
                 </div>
             </div>
         </div>

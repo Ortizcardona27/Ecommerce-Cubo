@@ -34,7 +34,7 @@ function abrirRedSocial() {
     var redSocial = "https://instagram.com/ortizcardona27?igshid=ZDdkNTZiNTM= "
     alert("Welcome to our instagram, here you can contact us and we will give you a username and password.");
     window.location = redSocial;
-} 
+}
 
 $("#boton").click(function (e) {
     var ms = "";
