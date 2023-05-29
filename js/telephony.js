@@ -1,5 +1,5 @@
 const stockProductos = [
-{
+  {
     id: 1,
     nombre: "Telephony 100 Minutes",
     cantidad: 1,
@@ -31,9 +31,9 @@ const stockProductos = [
     precio: 29900,
     img: "img/telefono.png",
   }
-  ];
+];
 
-  let carrito = [];
+let carrito = [];
 
 const contenedor = document.querySelector("#contenedor");
 const carritoContenedor = document.querySelector("#carritoContenedor");

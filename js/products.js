@@ -31,7 +31,7 @@ const stockProductos = [
     precio: 29900,
     img: "img/telefono.png",
   },
-  
+
   {
     id: 5,
     nombre: "Television HD",
