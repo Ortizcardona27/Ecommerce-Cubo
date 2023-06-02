@@ -21,6 +21,7 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 <body>
+    
     <div class="logo">
         <a href="home.html">
             <img class="imagen" src="./img/right.png" height="80">
@@ -69,12 +70,12 @@
             <form action="https://formsubmit.co/8a25e0c00b850e0d8eb6943d0da8a611" method="POST" id="formulario">
                 <div class="row">
                     <div class="col">
-                        <label for="subject">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subject *</label>
+                        <label for="subject">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subject </label>
                         <input name="subject" type="text" class="form1" id="subject" maxlength="60" required>
                     </div>
 
                     <div class="col">
-                        <label for="caseType">Case Type *</label>
+                        <label for="caseType">Case Type </label>
                         <select name="caseType" id="caseType" class="form1">
                             <option>Request</option>
                             <option>Support</option>
@@ -89,11 +90,11 @@
 
                 <div class="row">
                     <div class="col">
-                        <label for="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name *</label>
+                        <label for="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name </label>
                         <input name="name" type="text" class="form1" id="name" required>
                     </div>
                     <div class="col">
-                        <label for="phone">Cellphone *</label>
+                        <label for="phone">Cellphone </label>
                         <input name="cellphone" type="phone" class="form1" id="phone" maxlength="10" required>
                     </div>
                 </div>
@@ -101,11 +102,11 @@
                 <p></p>
                 <div class="row">
                     <div class="col">
-                        <label for="description">Description *</label>
+                        <label for="description">Description </label>
                         <input name="description" type="text" class="form1" id="description" required>
                     </div>
                     <div class="col">
-                        <label for="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-Mail *</label>
+                        <label for="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-Mail </label>
                         <input name="email" type="email" class="form1" placeholder="example@gmail.com" id="email"
                             required>
                     </div>
@@ -152,10 +153,12 @@
             </div>
         </div>
     </div>
+    
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/cases.js"></script>
+    
 </body>
 <footer class="footer">
     <div class="contenedor">
@@ -165,5 +168,8 @@
         </p>
     </div>
 </footer>
+<script>
+    window.alert("All fields are required.")
+</script>
 
 </html>
