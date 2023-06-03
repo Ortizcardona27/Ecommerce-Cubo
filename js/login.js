@@ -22,7 +22,7 @@ function readTxt(usuario, contrasena) {
                     alert("Welcome to CUBO.")
                     window.location = "index.html";
                 } else {
-                    alert("You have entered the wrong username and/or password, try again.")
+                    alert("You have entered the wrong username or password, try again.")
                 }
             }
         }
