@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "mysql": "^2.18.1"
+  },
+  "name": "ecommerce-cubo",
+  "description": "",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "express": "^4.18.2",
+    "html-webpack-plugin": "^5.5.1",
+    "nodemon": "^2.0.22",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.85.0",
+    "webpack-dev-middleware": "^6.1.1"
   }
 }

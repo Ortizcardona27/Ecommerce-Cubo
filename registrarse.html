@@ -81,18 +81,18 @@
 
                 <div class="row">
                     <div class="col">
-                        <label for="PasswordRegistro">Password</label>
-                        <input name="PasswordRegistro" type="password" class="form1" id="PasswordRegistro" required>
+                        <label for="passwordRegistro">Password</label>
+                        <input name="passwordRegistro" type="password" class="form1" id="passwordRegistro" required>
                     </div>
                 </div>
-                
+
                 <p></p>
                 <p></p>
 
                 <div class="row">
                     <div class="col">
-                        <label for="EmailRegistro">E-mail</label>
-                        <input name="EmailRegistro" type="text" class="form1" id="EmailRegistro" required>
+                        <label for="emailRegistro">E-mail</label>
+                        <input name="emailRegistro" type="text" class="form1" id="emailRegistro" required>
                     </div>
                 </div>
                 <p></p>
@@ -109,7 +109,7 @@
                 <p></p>
                 <p></p>
                 <p></p>
-                <button type="submit" class="button-cases-form" id="ingresar" data-bs-toggle="modal"
+                <button type="submit" class="button-cases-form" id="crearRegistro" data-bs-toggle="modal"
                     data-bs-target="#modal">SEND</button>
                 <input type="hidden" name="_next" value="http://127.0.0.1:5500/login.html">
                 <input type="hidden" name="_captcha" value="false">
@@ -121,23 +121,51 @@
         </div>
     </div>
 
-    <div class="container-xl">
-        <div class="modal" tabindex="-1" role="dialog" id="modal">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Case Register</h5>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <h3 class="modal-title">your user was created successfully!</h3>
-                </div>
-            </div>
-        </div>
-    </div>
+    <script src="js/conexion.js"></script>
+    <!-- <script>
+        // con.connect(function (err) {
+        //     if (err) {
+        //         console.log(err);
+        //     } else {
+        //         con.query("SELECT max(codigo) + 1 AS \"codigo\" FROM `usuarios`;", function (err, result) {
+        //             if (err) {
+        //                 console.log(err);
+        //             } else {
+        //                 // var id = result[0].codigo;
+        //                 // console.log(id);
+        //                 // let usuario = 'Johamhl';
+        //                 // let password = '123456';
+        //                 // let correo = 'johamhernandez81@gmail.com';
+        //                 con.query("INSERT INTO `usuarios`(`codigo`, `usuario`, `contrasena`, `correo`) VALUES ('" 
+        //                 + result[0].codigo + "','" + usuario + "','" + password + "','" + correo + "');");
+        //                 // for (var element of result) {
+        //                 //     console.log(element);
+        //                 // }
+        //             }
+        //         });
+        //         //console.log(id);
 
+        //         // con.query("INSERT INTO `usuarios`(`codigo`, `usuario`, `contrasena`, `correo`) VALUES (" + id +
+        //         //     "," + usuario + "," + password + "," + correo + ");", function (err, result) {
+        //         //         if (err) {
+        //         //             console.log(err);
+        //         //         } else {
+        //         //             console.log(result);
+        //         //         }
+        //         //     });
+        //     }
+        //     //console.log("Connected!");
+        // });
 
+        const crearRegistro = document.querySelector("#crearRegistro");
+
+        if (crearRegistro) {
+            crearRegistro.addEventListener("click", () => {
+                RegistrarUsuario(document.querySelector("#usuarioRegistro").value, document.querySelector("#passwordRegistro").value,
+                    document.querySelector("#emailRegistro").value);
+            });
+        }
+    </script> -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
