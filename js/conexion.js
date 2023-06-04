@@ -1,4 +1,4 @@
-export let mysql = require('mysql');
+let mysql = require('mysql');
 
 let con = mysql.createConnection({
     host: 'localhost',
