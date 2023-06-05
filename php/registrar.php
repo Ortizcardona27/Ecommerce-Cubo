@@ -11,7 +11,12 @@ if (isset($_POST['sendRegistro'])) {
         $email = trim($_POST['emailRegistro']);
         $fecha = date('Y-m-d H:i:s');
 
-        $consulta = "INSERT INTO `usuarios`(`codigo`, `usuario`, `contrasena`, `correo`, `fechaRegistro`) VALUES ('6','$usuario','$password','$email','$fecha');";
+        $consulta = "SELECT max(codigo) + 1 AS \"codigo\" FROM `usuarios`;";
+        $codigo = mysqli_query($conexion, $consulta);
+        $arr = mysqli_fetch_array($codigo)[0];
+        echo $arr[0];
+
+        $consulta = "INSERT INTO `usuarios`(`codigo`, `usuario`, `contrasena`, `correo`, `fechaRegistro`) VALUES ('$arr[0]','$usuario','$password','$email','$fecha');";
         $resultado = mysqli_query($conexion, $consulta);
         if ($resultado) {
             ?>
