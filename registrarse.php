@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Form | Cubo</title>
+    <title>New User| Cubo</title>
 </head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
@@ -29,42 +29,13 @@
     </div>
     <header class="header">
         <div class="contenedor">
-            <div class="barra">
-                <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #243853;">
-                    <div class="container-fluid">
-
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse" id="navbarColor01">
-                            <ul class="navbar-nav me-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Home
-                                        <span class="visually-hidden">(current)</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="products.html">Products</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="cases.html">Cases</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="login.html">Login</a>
-                                </li>
-                        </div>
-                    </div>
-                </nav>
-            </div>
+            <div class="barra"></div>
         </div>
     </header>
 
     <div class="contenido-principal">
-        <div class="v-line1"> </div>
-        <h1 class="centrar-texto">NEW RECORD</h1>
+       
+        <h1 class="centrar-texto">NEW USER</h1>
         <div class="container-cases">
 
             <form method="POST" id="formulario">
@@ -119,9 +90,7 @@
             ?>
         </div>
 
-        <div class="columna-casos">
-            <img class="card-img-top mt-2" src="./img/casos.png" alt="Card image cap">
-        </div>
+       
     </div>
 
     <script src="js/registro.js"></script>
