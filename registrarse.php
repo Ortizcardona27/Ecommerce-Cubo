@@ -80,8 +80,13 @@
                 <p></p>
                 <p></p>
                 <p></p>
+
+                <button onclick="location.href='index.html'"  class="button-cases-form" >BACK</button>
                 <button name="sendRegistro" type="submit" class="button-cases-form" id="crearRegistro" data-bs-toggle="modal"
-                    data-bs-target="#modal">SEND</button>
+                    data-bs-target="#modal">REGISTER ME</button>
+                   
+                    
+
                 <input type="hidden" name="_next" value="http://127.0.0.1:5500/login.html">
                 <input type="hidden" name="_captcha" value="false">
             </form>
