@@ -37,15 +37,15 @@
         </div>
     </header>
 
-    <div class="contenido-principal">
+    <div class="contenido-principal" style="padding-top: 50px; padding-left:580px">
        
-        <h1 class="centrar-texto">NEW USER</h1>
+        <h1 class="centrar-texto">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NEW USER</h1>
         <div class="container-cases">
 
             <form method="POST" id="formulario">
                 <div class="row">
                     <div class="col">
-                        <label for="usuarioRegistro">User</label>
+                        <label for="usuarioRegistro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User</label>
                         <input name="usuarioRegistro" type="text" class="form1" id="usuarioRegistro" maxlength="60"
                             required>
                     </div>
@@ -66,7 +66,7 @@
 
                 <div class="row">
                     <div class="col">
-                        <label for="emailRegistro">E-mail</label>
+                        <label for="emailRegistro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail</label>
                         <input name="emailRegistro" type="text" class="form1" id="emailRegistro" required>
                     </div>
                 </div>

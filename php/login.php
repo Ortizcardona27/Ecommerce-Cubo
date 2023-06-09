@@ -22,7 +22,9 @@ if (isset($_POST["button-login"])) {
 
         session_start();
         $_SESSION['usuario']=$registro;
+        echo "<script> alert('Welcome to Cubo!');</script>";
         header('location:products.php');
+
 
     } else {
         echo "<script> alert('Wrong username or password');</script>";
