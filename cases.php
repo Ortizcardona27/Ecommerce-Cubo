@@ -53,7 +53,7 @@
                                     <a class="nav-link active" href="cases.php">Cases</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="php/cerrarSesion.php">Sign off</a>
+                                    <a class="nav-link" href="cerrarSesion.php">Sign off</a>
                                   </li>
                               
                         </div>
