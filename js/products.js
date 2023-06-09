@@ -156,7 +156,7 @@ if (procesarCompra) {
         confirmButtonText: "Acept",
       });
     } else {
-      location.href = "buy.html";
+      location.href = "buy.php";
     }
   });
 }
