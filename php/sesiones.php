@@ -5,8 +5,6 @@ session_start();
 if (!isset($_SESSION['usuario'])) {
 
     header('Location:index.php');
-}{
-    print_r($_SESSION['usuario']);
 }
 
 ?>

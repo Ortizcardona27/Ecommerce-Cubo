@@ -28,8 +28,8 @@ if (isset($_POST['sendRegistro'])) {
             <?php
 
         } else {
-            $consulta = $pdo->prepare("INSERT INTO usuarios(ID, usuario, contrasena, correo, fechaRegistro) 
-            VALUES ('',:usuario,:password,:email,:fecha);");
+            $consulta = $pdo->prepare("INSERT INTO usuarios(ID, tipoUsuario, usuario, contrasena, correo, fechaRegistro) 
+            VALUES ('',2,:usuario,:password,:email,:fecha);");
     
             //$consulta->bindParam("codigo", $registro, PDO::PARAM_STR);
             $consulta->bindParam("usuario", $usuario,PDO::PARAM_STR);
