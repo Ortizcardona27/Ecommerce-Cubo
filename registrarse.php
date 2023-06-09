@@ -27,7 +27,7 @@
 <body>
 
     <div class="logo">
-        <a href="index.html">
+        <a href="home.html">
             <img class="imagen" src="./img/right.png" height="80">
         </a>
     </div>
@@ -85,13 +85,11 @@
                 <p></p>
                 <p></p>
 
-                <button onclick="location.href='index.html'"  class="button-cases-form" >BACK</button>
+                <button onclick="location.href='index.php'"  class="button-cases-form" >BACK</button>
                 <button name="sendRegistro" type="submit" class="button-cases-form" id="crearRegistro" data-bs-toggle="modal"
                     data-bs-target="#modal">REGISTER ME</button>
-                   
-                    
 
-                <input type="hidden" name="_next" value="http://127.0.0.1:5500/login.html">
+                <input type="hidden" name="_next" value="http://localhost/E-commerce%20CUBO/index.php">
                 <input type="hidden" name="_captcha" value="false">
             </form>
         </div>

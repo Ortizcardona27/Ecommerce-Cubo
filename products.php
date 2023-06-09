@@ -21,7 +21,7 @@ include("php/productos.php")
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <div class="logo">
-        <a href="home.html">
+        <a href="home.php">
             <img class="imagen" src="./img/right.png" height="80">
         </a>
     </div>
@@ -40,15 +40,15 @@ include("php/productos.php")
                         <div class="collapse navbar-collapse" id="navbarColor01">
                             <ul class="navbar-nav me-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="home.html">Home
+                                    <a class="nav-link" href="home.php">Home
                                         <span class="visually-hidden">(current)</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="products.html">Products</a>
+                                    <a class="nav-link active" href="products.php">Products</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="cases.html">Cases</a>
+                                    <a class="nav-link" href="cases.php">Cases</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="cerrarSesion.php">Sign off</a>
@@ -68,18 +68,18 @@ include("php/productos.php")
                         <div class="collapse navbar-collapse" id="navbarColor01">
                             <ul class="navbar-nav me-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="telephony.html">Telephony
+                                    <a class="nav-link" href="telephony.php">Telephony
                                         <span class="visually-hidden">(current)</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="television.html">Television</a>
+                                    <a class="nav-link " href="television.php">Television</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="internet.html">Internet</a>
+                                    <a class="nav-link" href="internet.php">Internet</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="packs.html">Packs</a>
+                                    <a class="nav-link" href="packs.php">Packs</a>
                                 </li>
                         </div>
                     </div>
