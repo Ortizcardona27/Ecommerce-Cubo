@@ -1,33 +1,59 @@
 <?php
 
-include("php/conexion.php");
-
 if (isset($_POST['sendRegistro'])) {
+
+    include("php/conexion.php");
+
     if (strlen($_POST['usuarioRegistro']) >= 1 && 
     strlen($_POST['passwordRegistro']) >= 1  && 
      strlen($_POST['emailRegistro']) >= 1) {
-        $usuario = trim($_POST['usuarioRegistro']);
-        $password = trim($_POST['passwordRegistro']);
-        $email = trim($_POST['emailRegistro']);
+        $usuario = ($_POST['usuarioRegistro']);
+        $password = ($_POST['passwordRegistro']);
+        $email = ($_POST['emailRegistro']);
         $fecha = date('Y-m-d H:i:s');
 
-        $consulta = "SELECT max(codigo) + 1 AS \"codigo\" FROM `usuarios`;";
-        $codigo = mysqli_query($conexion, $consulta);
-        $arr = mysqli_fetch_array($codigo)[0];
+        $consulta = $pdo->prepare("SELECT * FROM usuarios WHERE usuario=:usuario");
 
-        $consulta = "INSERT INTO `usuarios`(`codigo`, `usuario`, `contrasena`, `correo`, `fechaRegistro`) VALUES ('$arr[0]','$usuario','$password','$email','$fecha');";
-        $resultado = mysqli_query($conexion, $consulta);
-        if ($resultado) {
-            echo '<script>alert("Your registration has been successfully completed");</script>';
-            echo '<script>window.location = "index.php";</script>';
+        $consulta->bindParam("usuario", $usuario,PDO::PARAM_STR);
+
+        $consulta->execute();
+
+        $registro = $consulta->fetch(PDO::FETCH_ASSOC);
+        
+        //$numeroRegistros = $registro->rowCount();
+
+        if ($registro['usuario'] == $usuario) {
             ?>
-            <h3 class="ok">Success</h3>
+            <h3 class="ok">No se puede</h3>
             <?php
+
         } else {
-            ?>
-            <h3 class="bad">fallo</h3>
-            <?php
+            $consulta = $pdo->prepare("INSERT INTO usuarios(ID, usuario, contrasena, correo, fechaRegistro) 
+            VALUES ('',:usuario,:password,:email,:fecha);");
+    
+            //$consulta->bindParam("codigo", $registro, PDO::PARAM_STR);
+            $consulta->bindParam("usuario", $usuario,PDO::PARAM_STR);
+            $consulta->bindParam("password", $password,PDO::PARAM_STR);
+            $consulta->bindParam("email", $email,PDO::PARAM_STR);
+            $consulta->bindParam("fecha", $fecha,PDO::PARAM_STR);
+    
+            $consulta->execute();
+
+            echo '<script>alert("Your registration has been successfully completed");</script>';
+            header("location: index.php");
         }
+
+        //$registro = $consulta->fetch(PDO::FETCH_ASSOC);
+
+        //$numeroRegistros = $consulta->rowCount();
+
+        // $consulta = "SELECT max(codigo) + 1 AS \"codigo\" FROM `usuarios`;";
+        // $codigo = mysqli_query($conexion, $consulta);
+        // $arr = mysqli_fetch_array($codigo)[0];
+
+        // $consulta = "INSERT INTO `usuarios`(`codigo`, `usuario`, `contrasena`, `correo`, `fechaRegistro`) VALUES ('$arr[0]','$usuario','$password','$email','$fecha');";
+        // $resultado = mysqli_query($conexion, $consulta);
+
     } else {
         ?>
         <h3 class="bad">algo salio mal</h3>
