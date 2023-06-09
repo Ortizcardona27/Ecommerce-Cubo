@@ -23,7 +23,7 @@
 <body>
     
     <div class="logo">
-        <a href="home.html">
+        <a href="home.php">
             <img class="imagen" src="./img/right.png" height="80">
         </a>
     </div>
@@ -42,18 +42,18 @@
                         <div class="collapse navbar-collapse" id="navbarColor01">
                             <ul class="navbar-nav me-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="home.html">Home
+                                    <a class="nav-link" href="home.php">Home
                                         <span class="visually-hidden">(current)</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="products.html">Products</a>
+                                    <a class="nav-link" href="products.php">Products</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="cases.html">Cases</a>
+                                    <a class="nav-link active" href="cases.php">Cases</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.php">Login</a>
+                                    <a class="nav-link" href="php/cerrarSesion.php">Sign off</a>
                                   </li>
                               
                         </div>
@@ -128,7 +128,7 @@
                 <p></p>
                 <button type="submit" class="button-cases-form" id="ingresar" data-bs-toggle="modal"
                     data-bs-target="#modal">SEND</button>
-                <input type="hidden" name="_next" value="http://localhost/E-commerce%20CUBO/home.html">
+                <input type="hidden" name="_next" value="http://localhost/E-commerce%20CUBO/home.php">
                 <input type="hidden" name="_captcha" value="false">
             </form>
         </div>

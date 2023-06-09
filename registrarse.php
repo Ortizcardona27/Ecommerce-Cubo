@@ -1,3 +1,7 @@
+<?php 
+    include("php/registrar.php"); 
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <link rel="stylesheet" href="css/style.css">
@@ -90,9 +94,6 @@
                 <input type="hidden" name="_next" value="http://127.0.0.1:5500/login.html">
                 <input type="hidden" name="_captcha" value="false">
             </form>
-            <?php 
-            include("php/registrar.php"); 
-            ?>
         </div>
 
        

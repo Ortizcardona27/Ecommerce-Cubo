@@ -1,3 +1,7 @@
+<?php
+include("php/productos.php")
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,7 +51,7 @@
                                     <a class="nav-link" href="cases.html">Cases</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Login</a>
+                                    <a class="nav-link" href="cerrarSesion.php">Sign off</a>
                                   </li>
                         </div>
                     </div>

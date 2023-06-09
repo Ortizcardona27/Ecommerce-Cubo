@@ -303,7 +303,7 @@ function enviarCompra(e) {
         btn.value = 'Finalize Purchase';
         alert('Your transaction is being validated');
         setTimeout(() => {
-          window.location.href = "http://127.0.0.1:5500/products.html";
+          window.location.href = "http://localhost/E-commerce%20CUBO/products.php";
         }, 3000)
       }, (err) => {
         btn.value = 'Finalize Purchase';

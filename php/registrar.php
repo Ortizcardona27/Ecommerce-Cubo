@@ -14,11 +14,12 @@ if (isset($_POST['sendRegistro'])) {
         $consulta = "SELECT max(codigo) + 1 AS \"codigo\" FROM `usuarios`;";
         $codigo = mysqli_query($conexion, $consulta);
         $arr = mysqli_fetch_array($codigo)[0];
-        echo $arr[0];
 
         $consulta = "INSERT INTO `usuarios`(`codigo`, `usuario`, `contrasena`, `correo`, `fechaRegistro`) VALUES ('$arr[0]','$usuario','$password','$email','$fecha');";
         $resultado = mysqli_query($conexion, $consulta);
         if ($resultado) {
+            echo '<script>alert("Your registration has been successfully completed");</script>';
+            echo '<script>window.location = "index.php";</script>';
             ?>
             <h3 class="ok">Success</h3>
             <?php

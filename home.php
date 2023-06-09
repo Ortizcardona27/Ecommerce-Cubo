@@ -7,10 +7,11 @@
 <link rel="website icon" href="img/LogoCubo.png">
 
 <head>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login | Cubo</title>
+  <title>Cubo</title>
 </head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
@@ -22,12 +23,13 @@
 
 <body>
   <div class="logo">
-    <a href="index.html">
+    <a href="home.php">
       <img class="imagen" src="./img/right.png" height="80">
     </a>
   </div>
   <header class="header">
     <div class="contenedor">
+
       <div class="barra">
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #243853;">
           <div class="container-fluid">
@@ -40,46 +42,61 @@
             <div class="collapse navbar-collapse" id="navbarColor01">
               <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="home.html">Home
+                  <a class="nav-link active" href="home.php">Home
                     <span class="visually-hidden">(current)</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="products.html">Products</a>
+                  <a class="nav-link" href="products.php">Products</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="cases.html">Cases</a>
+                  <a class="nav-link" href="cases.php">Cases</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="index.html">Login</a>
+                  <a class="nav-link" href="php/cerrarSesion.php">Sign off</a>
                 </li>
-               
-               
             </div>
           </div>
         </nav>
       </div>
+    </div>
+
   </header>
 
-  <div class="contenido-principal" style="padding-top: 100px">
-    <h2>Username: </h2>
-    <input type="text" id="usuario" placeholder="Username"></input>
-    <p></p>
-    <h2>Password: </h2>
-    <input type="password" id="contrasena" placeholder="*******"></input>
-    <p></p>
-    <button onclick="readTxt(document.getElementById('usuario'),document.getElementById('contrasena'))"
-      id="button-login">Login</button>
-    <button onclick="abrirRedSocial()" id="button-login">Contact Us</button>
-    <p></p>
-    <a href="registrarse.php">You are a new customer?</a>
-  </div>
-  <script type="text/javascript" src="js/login.js"></script>
-</body>
+  <div class="contenido-principal">
+    <div class="columna">
+      <a href="telephony.php">
+        <img class="imagen-home" src="./img/telefono.png" height="150">
+      </a>
+      <a class="nav-link" href="telephony.php">
+        <button class="button-home">Telephony</button>
+      </a>
+    </div>
 
+    <div class="columna">
+      <a href="television.php">
+        <img class="imagen-home" src="./img/tv.png" height="150">
+      </a>
+      <a class="nav-link" href="television.php">
+        <button class="button-home">Television</button>
+      </a>
+    </div>
+
+    <div class="columna">
+      <a href="internet.php">
+        <img class="imagen-home" src="./img/internet.png" height="150">
+      </a>
+      <a class="nav-link" href="internet.php">
+        <button class="button-home">Internet</button>
+     </a>
+    </div>
+
+  </div>
+</body>
 <footer class="footer">
   <div class="contenedor">
-    <p class="footer-text-index">
+
+    <p class="footer-text"> 
       © 2023 CUBO Telecomunications - All rights reserved.
     </p>
   </div>
