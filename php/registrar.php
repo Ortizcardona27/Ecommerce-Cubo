@@ -23,9 +23,8 @@ if (isset($_POST['sendRegistro'])) {
         //$numeroRegistros = $registro->rowCount();
 
         if ($registro['usuario'] == $usuario) {
-            ?>
-            <h3 class="ok">No se puede</h3>
-            <?php
+
+            echo '<script>alert("The entered user is already registered. Please try a new one");</script>';
 
         } else {
             $consulta = $pdo->prepare("INSERT INTO usuarios(ID, tipoUsuario, usuario, contrasena, correo, fechaRegistro) 

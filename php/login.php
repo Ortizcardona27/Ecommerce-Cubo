@@ -22,10 +22,12 @@ if (isset($_POST["button-login"])) {
 
         session_start();
         $_SESSION['usuario']=$registro;
-        echo "<script> alert('Welcome to Cubo!');</script>";
-        header('location:products.php');
 
-
+        if ($registro['tipoUsuario'] == 1) {
+            header('Location: Administrador/homeAdmin.php');
+        } else {
+            header('Location: products.php');
+        }
     } else {
         echo "<script> alert('Wrong username or password');</script>";
     }
@@ -37,5 +39,3 @@ if (isset($_POST["button-login"])) {
 //     alert("Welcome to our instagram, here you can contact us and we will give you a username and password.");
 //     window.location = redSocial;
 // } 
-
-?>

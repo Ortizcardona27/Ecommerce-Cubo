@@ -98,50 +98,6 @@
     </div>
 
     <script src="js/registro.js"></script>
-    <!-- <script>
-        // con.connect(function (err) {
-        //     if (err) {
-        //         console.log(err);
-        //     } else {
-        //         con.query("SELECT max(codigo) + 1 AS \"codigo\" FROM `usuarios`;", function (err, result) {
-        //             if (err) {
-        //                 console.log(err);
-        //             } else {
-        //                 // var id = result[0].codigo;
-        //                 // console.log(id);
-        //                 // let usuario = 'Johamhl';
-        //                 // let password = '123456';
-        //                 // let correo = 'johamhernandez81@gmail.com';
-        //                 con.query("INSERT INTO `usuarios`(`codigo`, `usuario`, `contrasena`, `correo`) VALUES ('" 
-        //                 + result[0].codigo + "','" + usuario + "','" + password + "','" + correo + "');");
-        //                 // for (var element of result) {
-        //                 //     console.log(element);
-        //                 // }
-        //             }
-        //         });
-        //         //console.log(id);
-
-        //         // con.query("INSERT INTO `usuarios`(`codigo`, `usuario`, `contrasena`, `correo`) VALUES (" + id +
-        //         //     "," + usuario + "," + password + "," + correo + ");", function (err, result) {
-        //         //         if (err) {
-        //         //             console.log(err);
-        //         //         } else {
-        //         //             console.log(result);
-        //         //         }
-        //         //     });
-        //     }
-        //     //console.log("Connected!");
-        // });
-
-        const crearRegistro = document.querySelector("#crearRegistro");
-
-        if (crearRegistro) {
-            crearRegistro.addEventListener("click", () => {
-                RegistrarUsuario(document.querySelector("#usuarioRegistro").value, document.querySelector("#passwordRegistro").value,
-                    document.querySelector("#emailRegistro").value);
-            });
-        }
-    </script> -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
