@@ -1,5 +1,5 @@
 <?php
-include("../php/productos.php")
+include("php/productos.php");
 ?>
 
 <!DOCTYPE html>
@@ -13,16 +13,16 @@ include("../php/productos.php")
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-    <link rel="website icon" href="../img/LogoCubo.png">
-    <link rel="stylesheet" href="../css/estilos.css" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="website icon" href="img/LogoCubo.png">
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <div class="logo">
-        <a href="homeAdmin.php">
-            <img class="imagen" src="../img/right.png" height="80">
+        <a href="Administrador/homeAdmin.php">
+            <img class="imagen" src="img/right.png" height="80">
         </a>
     </div>
     <header class="header">
@@ -40,7 +40,7 @@ include("../php/productos.php")
                         <div class="collapse navbar-collapse" id="navbarColor01">
                             <ul class="navbar-nav me-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="homeAdmin.php">Home
+                                    <a class="nav-link" href="Administrador/homeAdmin.php">Home
                                         <span class="visually-hidden">(current)</span>
                                     </a>
                                 </li>
@@ -68,18 +68,18 @@ include("../php/productos.php")
                         <div class="collapse navbar-collapse" id="navbarColor01">
                             <ul class="navbar-nav me-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="telephonyAdmin.php">Telephony
+                                    <a class="nav-link" href="Administrador/telephonyAdmin.php">Telephony
                                         <span class="visually-hidden">(current)</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="televisionAdmin.php">Television</a>
+                                    <a class="nav-link " href="Administrador/televisionAdmin.php">Television</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="internetAdmin.php">Internet</a>
+                                    <a class="nav-link" href="Administrador/internetAdmin.php">Internet</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="packsAdmin.php">Packs</a>
+                                    <a class="nav-link" href="Administrador/packsAdmin.php">Packs</a>
                                 </li>
                         </div>
                     </div>
@@ -137,9 +137,9 @@ include("../php/productos.php")
         </div>
     </div>
 
-    <script src="../php/panel.php"></script>
-    <script src="../js/products.js"></script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="php/panel.php"></script>
+    <script src="js/products.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 <footer class="footer">

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,14 +43,14 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="productsAdmin.php">Products</a>
+                                    <a class="nav-link active" href="../productsAdmin.php">Products</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="addProducts.php">Add products</a>
+                                    <a class="nav-link" href="../addProducts.php">Add products</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="cerrarSesion.php">Sign off</a>
+                                    <a class="nav-link" href="../cerrarSesion.php">Sign off</a>
                                   </li>
                         
                         </div>

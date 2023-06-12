@@ -1,14 +1,15 @@
 <?php
 session_start();
+include('php/addProduct.php');
 ?>
 
 <!DOCTYPE html>
 <html lang="es">
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@700&display=swap" rel="stylesheet">
-<link rel="website icon" href="../img/LogoCubo.png">
+<link rel="website icon" href="img/LogoCubo.png">
 
 <head>
     <meta charset="UTF-8">
@@ -26,8 +27,8 @@ session_start();
 <body>
 
     <div class="logo">
-        <a href="homeAdmin.php">
-            <img class="imagen" src="../img/right.png" height="80">
+        <a href="Administrador/homeAdmin.php">
+            <img class="imagen" src="img/right.png" height="80">
         </a>
     </div>
     <header class="header">
@@ -43,7 +44,7 @@ session_start();
                         <div class="collapse navbar-collapse" id="navbarColor01">
                             <ul class="navbar-nav me-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="homeAdmin.php">Home
+                                    <a class="nav-link" href="Administrador/homeAdmin.php">Home
                                         <span class="visually-hidden">(current)</span>
                                     </a>
                                 </li>
@@ -56,7 +57,6 @@ session_start();
                                 <li class="nav-item">
                                     <a class="nav-link" href="cerrarSesion.php">Sign off</a>
                                 </li>
-
                         </div>
                     </div>
                 </nav>
@@ -68,7 +68,7 @@ session_start();
         <div class="v-line1"> </div>
         <h1 class="centrar-texto">ADD PRODUCT</h1>
         <div class="container-cases">
-            <form method="POST" id="formulario">
+            <form method="POST" id="formulario" enctype="multipart/formdata">
                 <div class="row">
                     <div class="col">
                         <label for="productAdd">Product</label>
@@ -88,7 +88,7 @@ session_start();
                 <p></p>
                 <p></p>
                 <div class="row">
-                <div class="col">
+                    <div class="col">
                         <label for="descriptionAdd">Description</label>
                         <input name="descriptionAdd" type="phone" class="form1" id="descriptionAdd" required>
                     </div>
@@ -109,20 +109,19 @@ session_start();
                 <p></p>
                 <div class="row">
                     <div class="input-box col-12">
-                        <label for="imagen" style="color: #ECFCFF">Imagen</label>
-                        <input id="imagen" type="file" name="imagen" class="imagen" required >
+                        <label for="imagenAdd" style="color: #ECFCFF">Image</label>
+                        <input id="imagenAdd" type="file" name="imagenAdd" class="imagen" required>
                     </div>
                 </div>
                 <p></p>
                 <p></p>
                 <p></p>
                 <p></p>
-                <button name="sendAddRegister" type="submit" class="button-cases-form" id="ingresarAdd">SEND</button>
+                <button name="sendAddRegister" type="submit" class="button-cases-form" id="sendAddRegister">SEND</button>
             </form>
         </div>
     </div>
-
-    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="..//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>

@@ -1,5 +1,5 @@
 <?php
-include("php/panel.php")
+include("php/panel.php");
 ?>
 
 <!DOCTYPE html>
