@@ -44,11 +44,6 @@ include('php/addProduct.php');
                         <div class="collapse navbar-collapse" id="navbarColor01">
                             <ul class="navbar-nav me-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="Administrador/homeAdmin.php">Home
-                                        <span class="visually-hidden">(current)</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="productsAdmin.php">Products</a>
                                 </li>
                                 <li class="nav-item">

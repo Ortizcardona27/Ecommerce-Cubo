@@ -35,11 +35,6 @@
                         <div class="collapse navbar-collapse" id="navbarColor01">
                             <ul class="navbar-nav me-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="Administrador/homeAdmin.php">Home
-                                        <span class="visually-hidden">(current)</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link active" href="productsAdmin.php">Products</a>
                                 </li>
                                 <li class="nav-item">
@@ -47,32 +42,6 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="cerrarSesion.php">Sign off</a>
-                                </li>
-                        </div>
-                    </div>
-                </nav>
-                <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #243853;">
-                    <div class="container-fluid">
-
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse" id="navbarColor01">
-                            <ul class="navbar-nav me-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Administrador/telephonyAdmin.php">Telephony
-                                        <span class="visually-hidden">(current)</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href="Administrador/televisionAdmin.php">Television</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Administrador/internetAdmin.php">Internet</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Administrador/packsAdmin.php">Packs</a>
                                 </li>
                         </div>
                     </div>
