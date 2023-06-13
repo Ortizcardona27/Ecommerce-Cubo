@@ -30,7 +30,7 @@ if (isset($_POST["button-login"])) {
             header('Location: products.php');
         }
     } else {
-        echo "<script> alert('Wrong username or password');</script>";
+        echo "<script> alert('Wrong username or password. Try again.');</script>";
     }
 }
 

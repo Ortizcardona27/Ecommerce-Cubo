@@ -38,8 +38,8 @@ if (isset($_POST['sendRegistro'])) {
     
             $consulta->execute();
 
-            echo '<script>alert("Your registration has been successfully completed");</script>';
-            header("location: index.php");
+            echo '<script language="javascript">alert("Your registration has been successfully completed");
+            window.location.href="index.php"</script>';
         }
 
         //$registro = $consulta->fetch(PDO::FETCH_ASSOC);
