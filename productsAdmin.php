@@ -1,21 +1,18 @@
-<?php
-include("php/productos.php");
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
     <title>Products | Cubo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
     <link rel="website icon" href="img/LogoCubo.png">
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="css/style.css" />
+    
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,9 +28,7 @@ include("php/productos.php");
                 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #243853;">
                     <div class="container-fluid">
 
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false"
-                            aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
@@ -52,16 +47,14 @@ include("php/productos.php");
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="cerrarSesion.php">Sign off</a>
-                                  </li>
+                                </li>
                         </div>
                     </div>
                 </nav>
                 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #243853;">
                     <div class="container-fluid">
 
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false"
-                            aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
@@ -90,55 +83,53 @@ include("php/productos.php");
 </head>
 
 <body>
-    <header>
-        <div class="barra">
-            <nav class="navbar bg-dark">
-                <h2 class="p-3 text-white">SHOPPING CART CUBO</h2>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal">
-                            <i class="bi bi-cart mx-5" id="carritoContenedor">0</i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
     <main>
-        <div class="row mt-5" id="contenedor"></div>
-    </main>
+        <div class="row mt-5" id="contenedor">
+            <?php
+            include("php/conexion.php");
 
-    <div class="container-xl">
-        <div class="modal" tabindex="-1" role="dialog" id="modal">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">CART</h5>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body"></div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" id="vaciarCarrito">
-                            Empty Cart
-                        </button>
-                        <button type="button" id="procesarCompra" class="btn btn-primary">
-                            Continue Shopping
-                        </button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                            Close
-                        </button>
-                        <span>Total Price:</span>
-                        <p class="text-center" id="precioTotal"></p>
+            $consulta = $pdo->prepare("SELECT * FROM productos;");
+
+            $consulta->execute();
+
+            $registro = $consulta->fetchAll(PDO::FETCH_ASSOC);
+
+            foreach ($registro as $linea) {
+            ?>
+                <div class="card mt-3" style="width: 18rem; text-align: center; margin-left: 50px;">
+                    <div class="card-body">
+                        <h5 class="card-title"><?php echo $linea['producto'] ?></h5>
+                        <br>
+                        <img style="width: 100px" class="mt-2" src="img/<?php echo $linea['imagen'] ?>" alt="Card image cap">
+                        <br><br>
+                        <p class="card-text"><?php echo $linea['descripcion'] ?></p>
+                        <p class="card-text"><?php echo $linea['precio'] ?></p>
+
+                        <button name="editProduct" class="btn btn-primary" id="<?php echo $linea['ID'] ?>">Edit Product</button>
+                        <br><br>
+                        <button name="deleteProduct" class="btn btn-danger" id="<?php echo $linea['ID'] ?>" onclick="eliminarProducto(this.id)">Delete Product</button>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
 
+            <?php
+            }
+            ?>
+        </div>
+    </main>
+
+    <?php include("productos.php"); ?>
+    <script>
+        function eliminarProducto(id) {
+            console.log(id);
+            $.post("productos.php", {
+                "texto": id
+            }, function(respuesta) {
+                alert(respuesta);
+                window.location.href = 'http://localhost/E-commerce%20CUBO/productsAdmin.php';
+            });
+        }
+    </script>
     <script src="php/panel.php"></script>
-    <script src="js/products.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>

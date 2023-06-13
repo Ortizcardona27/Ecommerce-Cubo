@@ -1,118 +1,118 @@
-const stockProductos = [
-  {
-    id: 1,
-    nombre: "Telephony 100 Minutes",
-    cantidad: 1,
-    desc: "WhatsApp + Twitter + 100 minutes.",
-    precio: 9900,
-    img: "img/telefono.png",
-  },
-  {
-    id: 2,
-    nombre: "Telephony 300 Minutes",
-    cantidad: 1,
-    desc: "WhatsApp + Twitter + Facebook + 300 minutes.",
-    precio: 19900,
-    img: "img/telefono.png",
-  },
-  {
-    id: 3,
-    nombre: "Telephony Unlimited",
-    cantidad: 1,
-    desc: "WhatsApp + Twitter + Facebook + Unlimited minutes.",
-    precio: 23900,
-    img: "img/telefono.png",
-  },
-  {
-    id: 4,
-    nombre: "Telephony Unlimited",
-    cantidad: 1,
-    desc: "All social networks + Unlimited minutes.",
-    precio: 29900,
-    img: "img/telefono.png",
-  },
+// const stockProductos = [
+//   {
+//     id: 1,
+//     nombre: "Telephony 100 Minutes",
+//     cantidad: 1,
+//     desc: "WhatsApp + Twitter + 100 minutes.",
+//     precio: 9900,
+//     img: "img/telefono.png",
+//   },
+//   {
+//     id: 2,
+//     nombre: "Telephony 300 Minutes",
+//     cantidad: 1,
+//     desc: "WhatsApp + Twitter + Facebook + 300 minutes.",
+//     precio: 19900,
+//     img: "img/telefono.png",
+//   },
+//   {
+//     id: 3,
+//     nombre: "Telephony Unlimited",
+//     cantidad: 1,
+//     desc: "WhatsApp + Twitter + Facebook + Unlimited minutes.",
+//     precio: 23900,
+//     img: "img/telefono.png",
+//   },
+//   {
+//     id: 4,
+//     nombre: "Telephony Unlimited",
+//     cantidad: 1,
+//     desc: "All social networks + Unlimited minutes.",
+//     precio: 29900,
+//     img: "img/telefono.png",
+//   },
 
-  {
-    id: 5,
-    nombre: "Television HD",
-    cantidad: 1,
-    desc: "Television HD, Include repeaters.",
-    precio: 20900,
-    img: "img/tv.png",
-  },
-  {
-    id: 6,
-    nombre: "HD + Win Sports+",
-    cantidad: 1,
-    desc: "Television HD + Win Sports+. Include repeaters",
-    precio: 23900,
-    img: "img/tv.png",
-  },
-  {
-    id: 7,
-    nombre: "HD + Netflix + HBO+",
-    cantidad: 1,
-    desc: "Television HD + Netflix + HBO+. Includes repeaters.",
-    precio: 29900,
-    img: "img/tv.png",
-  },
-  {
-    id: 8,
-    nombre: "Internet 10MG",
-    cantidad: 1,
-    desc: "Internet 10MG. Includes modem.",
-    precio: 37900,
-    img: "img/internet.png",
-  },
-  {
-    id: 9,
-    nombre: "Internet 20MG",
-    cantidad: 1,
-    desc: "Internet 20MG. Includes modem.",
-    precio: 45100,
-    img: "img/internet.png",
-  },
-  {
-    id: 10,
-    nombre: "Internet 100MG",
-    cantidad: 1,
-    desc: "Internet 100MG. Includes modem.",
-    precio: 54900,
-    img: "img/internet.png",
-  },
-  {
-    id: 11,
-    nombre: "4GB of navigation",
-    cantidad: 1,
-    desc: "Telephony, internet and television.",
-    precio: 79900,
-    img: "img/planes.png",
-  },
-  {
-    id: 12,
-    nombre: "10GB Of Navigation",
-    cantidad: 1,
-    desc: "Telephony, internet and television.",
-    precio: 99900,
-    img: "img/planes.png",
-  },
-  {
-    id: 13,
-    nombre: "20GB Of Navigation",
-    cantidad: 1,
-    desc: "Telephony, internet and television. Includes repeaters.",
-    precio: 140900,
-    img: "img/planes.png",
-  },
-  {
-    id: 14,
-    nombre: "30GB Of Navigation",
-    cantidad: 1,
-    desc: "Telephony, fiber optic Internet and satellite television. Includes repeaters.",
-    precio: 200900,
-    img: "img/planes.png",
-  },
-];
+//   {
+//     id: 5,
+//     nombre: "Television HD",
+//     cantidad: 1,
+//     desc: "Television HD, Include repeaters.",
+//     precio: 20900,
+//     img: "img/tv.png",
+//   },
+//   {
+//     id: 6,
+//     nombre: "HD + Win Sports+",
+//     cantidad: 1,
+//     desc: "Television HD + Win Sports+. Include repeaters",
+//     precio: 23900,
+//     img: "img/tv.png",
+//   },
+//   {
+//     id: 7,
+//     nombre: "HD + Netflix + HBO+",
+//     cantidad: 1,
+//     desc: "Television HD + Netflix + HBO+. Includes repeaters.",
+//     precio: 29900,
+//     img: "img/tv.png",
+//   },
+//   {
+//     id: 8,
+//     nombre: "Internet 10MG",
+//     cantidad: 1,
+//     desc: "Internet 10MG. Includes modem.",
+//     precio: 37900,
+//     img: "img/internet.png",
+//   },
+//   {
+//     id: 9,
+//     nombre: "Internet 20MG",
+//     cantidad: 1,
+//     desc: "Internet 20MG. Includes modem.",
+//     precio: 45100,
+//     img: "img/internet.png",
+//   },
+//   {
+//     id: 10,
+//     nombre: "Internet 100MG",
+//     cantidad: 1,
+//     desc: "Internet 100MG. Includes modem.",
+//     precio: 54900,
+//     img: "img/internet.png",
+//   },
+//   {
+//     id: 11,
+//     nombre: "4GB of navigation",
+//     cantidad: 1,
+//     desc: "Telephony, internet and television.",
+//     precio: 79900,
+//     img: "img/planes.png",
+//   },
+//   {
+//     id: 12,
+//     nombre: "10GB Of Navigation",
+//     cantidad: 1,
+//     desc: "Telephony, internet and television.",
+//     precio: 99900,
+//     img: "img/planes.png",
+//   },
+//   {
+//     id: 13,
+//     nombre: "20GB Of Navigation",
+//     cantidad: 1,
+//     desc: "Telephony, internet and television. Includes repeaters.",
+//     precio: 140900,
+//     img: "img/planes.png",
+//   },
+//   {
+//     id: 14,
+//     nombre: "30GB Of Navigation",
+//     cantidad: 1,
+//     desc: "Telephony, fiber optic Internet and satellite television. Includes repeaters.",
+//     precio: 200900,
+//     img: "img/planes.png",
+//   },
+// ];
 let carrito = [];
 
 const contenedor = document.querySelector("#contenedor");
@@ -161,25 +161,25 @@ if (procesarCompra) {
   });
 }
 
-stockProductos.forEach((prod) => {
-  const { id, nombre, precio, desc, img, cantidad } = prod;
-  if (contenedor) {
-    contenedor.innerHTML += `
-    <div class="card mt-3" style="width: 18rem; text-align: center; margin-left: 50px;">
-      <div class="card-body">
-        <h5 class="card-title">${nombre}</h5>
-        <br>
-        <img style="width: 100px" class="mt-2" src="${img}" alt="Card image cap">
-        <br><br>
-        <p class="card-text">${desc}</p>        
-        <p class="card-text">$ ${precio}</p>
+// stockProductos.forEach((prod) => {
+//   const { id, nombre, precio, desc, img, cantidad } = prod;
+//   if (contenedor) {
+//     contenedor.innerHTML += `
+//     <div class="card mt-3" style="width: 18rem; text-align: center; margin-left: 50px;">
+//       <div class="card-body">
+//         <h5 class="card-title">${nombre}</h5>
+//         <br>
+//         <img style="width: 100px" class="mt-2" src="${img}" alt="Card image cap">
+//         <br><br>
+//         <p class="card-text">${desc}</p>        
+//         <p class="card-text">$ ${precio}</p>
         
-        <button class="btn btn-primary" onclick="agregarProducto(${id})">Buy Product</button>
-      </div>
-    </div>
-      `;
-  }
-});
+//         <button class="btn btn-primary" onclick="agregarProducto(${id})">Buy Product</button>
+//       </div>
+//     </div>
+//       `;
+//   }
+// });
 
 //<p class="card-text">${cantidad}</p>
 

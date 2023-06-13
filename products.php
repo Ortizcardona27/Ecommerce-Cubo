@@ -1,7 +1,3 @@
-<?php
-include("php/productos.php")
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,8 +6,7 @@ include("php/productos.php")
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Products | Cubo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
     <link rel="website icon" href="img/LogoCubo.png">
     <link rel="stylesheet" href="estilos.css" />
@@ -22,7 +17,7 @@ include("php/productos.php")
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <div class="logo">
         <a href="home.php">
-            <img class="imagen" src="./img/right.png" height="80">
+            <img class="imagen" src="img/right.png" height="80">
         </a>
     </div>
     <header class="header">
@@ -31,9 +26,7 @@ include("php/productos.php")
                 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #243853;">
                     <div class="container-fluid">
 
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false"
-                            aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
@@ -52,16 +45,14 @@ include("php/productos.php")
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="cerrarSesion.php">Sign off</a>
-                                  </li>
+                                </li>
                         </div>
                     </div>
                 </nav>
                 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #243853;">
                     <div class="container-fluid">
 
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false"
-                            aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
@@ -105,7 +96,7 @@ include("php/productos.php")
         </div>
     </header>
     <main>
-        <div class="row mt-5" id="contenedor"></div>
+        <div class="row mt-5" id="contenedor">
     </main>
 
     <div class="container-xl">
@@ -137,8 +128,8 @@ include("php/productos.php")
         </div>
     </div>
 
-    <script src="php/panel.php"></script>
     <script src="js/products.js"></script>
+    <script src="php/panel.php"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
