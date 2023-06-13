@@ -24,7 +24,7 @@ if (isset($_POST["button-login"])) {
         $_SESSION['usuario']=$registro;
 
         if ($registro['tipoUsuario'] == 1) {
-            header('Location: Administrador/homeAdmin.php');
+            header('Location: productsAdmin.php');
             //print_r($registro);
         } else {
             header('Location: products.php');

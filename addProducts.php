@@ -27,7 +27,7 @@ include('php/addProduct.php');
 <body>
 
     <div class="logo">
-        <a href="Administrador/homeAdmin.php">
+        <a href="productsAdmin.php">
             <img class="imagen" src="img/right.png" height="80">
         </a>
     </div>
@@ -59,19 +59,19 @@ include('php/addProduct.php');
         </div>
     </header>
 
-    <div class="contenido-principal">
-        <div class="v-line1"> </div>
-        <h1 class="centrar-texto">ADD PRODUCT</h1>
+    <div class="contenido-principal" style="padding-top: 50px; padding-left:580px">
+        <h1 class="centrar-texto">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ADD PRODUCT</h1>
         <div class="container-cases">
             <form method="POST" id="formulario" enctype="multipart/formdata">
                 <div class="row">
                     <div class="col">
-                        <label for="productAdd">Product</label>
+                        <label for="productAdd">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product</label>
                         <input name="productAdd" type="text" class="form1" id="productAdd" maxlength="60" required>
                     </div>
-
+                    <p></p>
+                    
                     <div class="col">
-                        <label for="typeAdd">Type</label>
+                        <label for="typeAdd">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type</label>
                         <select name="typeAdd" id="typeAdd" class="form1" required>
                             <option>Internet</option>
                             <option>Packs</option>
@@ -87,8 +87,10 @@ include('php/addProduct.php');
                         <label for="descriptionAdd">Description</label>
                         <input name="descriptionAdd" type="phone" class="form1" id="descriptionAdd" required>
                     </div>
+                    
+                    <p></p>
                     <div class="col">
-                        <label for="quantityAdd">Quantity</label>
+                        <label for="quantityAdd">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity</label>
                         <input name="quantityAdd" type="number" min="0" step="1" class="form1" id="quantityAdd" required>
                     </div>
                 </div>
@@ -96,7 +98,7 @@ include('php/addProduct.php');
                 <p></p>
                 <div class="row">
                     <div class="col">
-                        <label for="priceAdd">Price</label>
+                        <label for="priceAdd">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price</label>
                         <input name="priceAdd" type="number" min="0" step="1" class="form1" id="priceAdd" required>
                     </div>
                 </div>

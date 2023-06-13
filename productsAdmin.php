@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <div class="logo">
-        <a href="Administrador/homeAdmin.php">
+        <a href="productsAdmin.php">
             <img class="imagen" src="img/right.png" height="80">
         </a>
     </div>
